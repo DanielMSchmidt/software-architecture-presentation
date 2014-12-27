@@ -42,6 +42,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', [
+    'latex:dist',
     'copy',
     'gh-pages'
   ]);
