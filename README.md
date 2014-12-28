@@ -24,4 +24,11 @@
 ### Achitekturbasierte Anpassungsfähigkeit messen
 
 - Der Ansatz basiert auf einer Component-and-Connector Ansicht, da sie allgemein verwendet wird um über die Qualitätswerte zur Laufzeit zu reden.
+- **AAS** (Absolute adaptability of a service): misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.
+- **RAS** (Relative Adaptability of a service): misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die eigentlich solchen Service anbieten.
+- **MAAS** (Mean of absolute adaptability of service): misst die durchnittliche Nummer der genutzten Komponenten pro Dienstleistung.
+- **MRAS** (Mean of relative adaptability of service): misst den Durchschnitt des RAS (Relative Adaptability of a service).
+- **LSA** (Level of system adaptability): misst die Anzahl der Komponenten die benutzt werden um das System abzubilen im Verhältnis zu der Anzahl der Komponenten die die anpassungsfähigste Architektur nutzen würde
+
+### Relating adaptability to a system quality attribute
 
