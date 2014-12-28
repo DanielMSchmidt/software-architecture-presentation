@@ -34,3 +34,6 @@
 
 - Um die Bedeutung von Adapt+ und Adapt- zu erklären wird sich auf die Abbildung Fig.4 bezogen: In (a) und (d) ist Adapt- das niedrigestes A_i für welches man eine Architektur finden kann, welche die Anforderungen erfüllt. Adapt+ ist das niedrigste A_i, dessen Grenzen Q_{A_i U} und Q_{A_i L} die Anforderungen erfüllt.
 - Die Werte zeigen, dass die Erfüllung der Anforderungen eine Anpassungsfähigkeit von Adapt- voraussetzen und, dass jede Architektur die mindestens Adapt+ hat die Anforderungen auch erfüllt. Für Anpassungsfähigkeit dazwischen gibt es Architekturen, die die Anforderungen erfüllen und solche die es nicht tun.
+
+### Relating adaptability to several system quality attributes
+
