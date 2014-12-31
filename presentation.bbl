@@ -1,0 +1,39 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{main}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Diego Perez-Palacin}{D.~P.-P.}%
+     {Jos{\'e}~Merseguer}{J.~M.}%
+     {}{}%
+     {Raffaela~Mirandola}{R.~M.}}%
+  }
+  \strng{namehash}{DPPRMJM1}
+  \strng{fullhash}{DPPRMJM1}
+  \field{sortinit}{D}
+  \field{title}{On the relationships between QoS and software adpatability at
+  the architectural level}
+  \field{journaltitle}{The Journal of Systems and Software}
+  \field{year}{2013}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

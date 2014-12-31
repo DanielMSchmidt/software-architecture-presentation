@@ -1,5 +1,20 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{float}
+\usepackage{listings} 
+\usepackage{xcolor}
+\usepackage[backend=bibtex,style=numeric,citestyle=verbose]{biblatex}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[automark]{scrpage2}
+\usepackage[stable]{footmisc}
+\bibliography{presentation}
 \usetheme{Berlin}
 \usecolortheme{dolphin}
 \beamertemplatenavigationsymbolsempty
@@ -90,15 +105,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne tum quidem te respic
 - Normale Probleme (lack of knowledge about the real world execution enviroment and consequently the difficulty in defining architecture parameters)
 }
 
-\section{Quellen}
-\frame{\frametitle{Quellen}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne tum quidem te respicies et cogitabis sibi quemque natum esse et suis voluptatibus? Dicam, inquam, et quidem discendi causa magis, quam quo te aut Epicurum reprehensum velim. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Egone non intellego, quid sit don Graece, Latine voluptas? Aliter enim nosmet ipsos nosse non possumus. Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Duo Reges: constructio interrete.
+\nocite{*}
+\begingroup
+\frame{\frametitle{Literatur}
+\printbibliography
 }
+\endgroup
+
 
 \section{TODOs}
 \frame{\frametitle{TODOs}
 \begin{itemize}
-\item Notizen sind unter https://github.com/DanielMSchmidt/software-architecture-presentation zu finden
+\item Notizen sind unter \url{https://github.com/DanielMSchmidt/software-architecture-presentation} zu finden
 \item Pro Thema entscheiden was an text auf die Folie soll und wie viele Folien zu dem Thema gehören
 \item Graphiken rendern / finden
 \item Beispiel übernehmen oder selbst überlegen
