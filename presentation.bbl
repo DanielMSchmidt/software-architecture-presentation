@@ -33,6 +33,23 @@
   \field{year}{2013}
 \endentry
 
+\entry{def-adaptability}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Nary~Subramanian}{N.~S.}%
+     {Lawrence~Chung}{L.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NSLC1}
+  \strng{fullhash}{NSLC1}
+  \field{sortinit}{N}
+  \field{title}{Metrics for Software Adaptability}
+  \verb{url}
+  \verb https://www.utdallas.edu/~chung/ftp/sqm.pdf
+  \endverb
+\endentry
+
 \lossort
 \endlossort
 
