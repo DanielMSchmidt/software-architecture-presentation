@@ -32,6 +32,7 @@
 
 \section{Einleitung}
 \frame{\frametitle{Einleitung}
+
 \note{
 \begin{itemize}
 \item Garantierte Anpassungsfähigkeit von Software kann andere Qualitätsattribute wie Geschwindigkeit, Verlässlichkeit und Wartbarkeit beeinflussen.
@@ -68,6 +69,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne tum quidem te respic
 
 \section{Metriken}
 \frame{\frametitle{Metriken}
+\begin{Definition}[$UC_i $]
+$UC_i $ = Komponenten die den Service i bereitstellen
+\end{Definition}
+
+\begin{Definition}[$C_i $]
+$C_i $ =  Komponenten die den Service bereitstellen können
+\end{Definition}
+}
+\frame{\frametitle{Metriken}
 \begin{itemize}
 \item AAS und RAS
 \item MAAS und MRAS
@@ -78,22 +88,50 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne tum quidem te respic
 \begin{itemize}
 \item Der Ansatz basiert auf einer Component-and-Connector Ansicht, da sie allgemein verwendet wird um über die Qualitätswerte zur Laufzeit zu reden.
 \end{itemize}
-} 
-}
+}}
 
 \subsection{AAS und RAS}
 \frame{\frametitle{AAS und RAS}
 
+\begin{Definition}[Absolute adaptability of a service]
+$AAS_i = | UC_i | $
+\end{Definition}
+}
+
+\frame{\frametitle{AAS und RAS}
+\begin{Definition}[Absolute adaptability of a service]
+$AAS_i = | UC_i | $
+\end{Definition}
+
+\begin{Definition}[Relative adaptability of a service]
+$RAS_i = \frac{| UC_i |}{| C_i |}$
+\end{Definition}
+
 \note {
 \begin{itemize}
-\item **AAS** (Absolute adaptability of a service): misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.
-\item **RAS** (Relative Adaptability of a service): misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die tatsächlich solchen Service anbieten.
+\item \textbf{AAS}: misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.
+\item \textbf{RAS}: misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die tatsächlich solchen Service anbieten.
 \end{itemize}
 }
 }
 
 \subsection{MAAS und MRAS}
 \frame{\frametitle{MAAS und MRAS}
+
+\begin{Definition}[Mean of absolute adaptability of service]
+$MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
+\end{Definition}
+}
+
+\frame{\frametitle{MAAS und MRAS}
+\begin{Definition}[Mean of absolute adaptability of service]
+$MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
+\end{Definition}
+
+\begin{Definition}[Mean of relative adaptability of service]
+$MAAS = \frac{\sum_{i=1}^n RAS_i }{n}$
+\end{Definition}
+
 \note{
 \begin{itemize}
 \item **MAAS** (Mean of absolute adaptability of service): misst die durchnittliche Nummer der genutzten Komponenten pro Dienstleistung. 
@@ -104,6 +142,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne tum quidem te respic
 
 \subsection{LSA}
 \frame{\frametitle{LSA}
+
+\begin{Definition}[Level of system adaptability]
+$LSA = \frac{\sum_{i=1}^n AAS_i }{\sum_{i=1}^n |C|}$
+\end{Definition}
+
 \note{
 \begin{itemize}
 \item **LSA** (Level of system adaptability): misst die Anzahl der Komponenten die benutzt werden um das System abzubilen im Verhältnis zu der Anzahl der Komponenten die die anpassungsfähigste Architektur nutzen würde
@@ -148,6 +191,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne tum quidem te respic
 
 \section{Beschränkungen}
 \frame{\frametitle{Beschränkungen}
+
+\begin{itemize}
+\item Weicher Erfüllungsgrad kann mit dem aktuellen Ansatz nicht vereint werden, da $Adapt^+$ und $Adapt-$ in einem durchgehenden Erfüllbarkeitsschema nicht existieren würden
+\item Keine Gewichtung von Komponenten \& Services
+\item Fehlendes Wissen über die tatsächliche Umgebung und die Schwierigkeit bei der Definition architektureller Parameter
+\end{itemize}
 
 \note {
 \begin{itemize}
