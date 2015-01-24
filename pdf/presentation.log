@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.5)  24 JAN 2015 18:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.5)  24 JAN 2015 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1477,6 +1477,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Overfull \hbox (20.4773pt too wide) detected at line 24
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 26.
@@ -1486,167 +1490,270 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 29.
 
 
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+
 (/Users/danielschmidt/Arbeit/Studium/7.Semester/softwareArchitecture/Vortrag/pr
 esentation/dist/pdf/presentation.toc) [2{/usr/local/texlive/2013/texmf-var/font
 s/map/pdftex/updmap/pdftex.map}
 
 
-] [3
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+[3
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 41.
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 41.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 42.
 
+LaTeX Font Info:    No file OMScmss.fd. on input line 42.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 41.
+(Font)              for symbol `textbullet' on input line 42.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <6> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 65.
 
 [4
 
 
 ]
-Overfull \vbox (99.64003pt too high) detected at line 58
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+
+Overfull \vbox (99.64003pt too high) detected at line 65
  []
 
 [5
 
 
-] [6
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
 
-
-] [7
-
-
-] [8
-
-
-] [9
+[6
 
 
 ]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\everymath' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\everymath' on input line 108.
+[7
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 108.
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+[8
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ifbeamercolorempty' on input line 108.
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+[9
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@a' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@b' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\everymath' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\everymath' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ifbeamercolorempty' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@a' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@b' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 108.
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
 
 [10
 
 
-] [11
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
 
-
-] [12
+[11
 
 
 ]
-Overfull \vbox (161.58447pt too high) detected at line 141
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
  []
+
+[12
+
+
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\everymath' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\everymath' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\ifbeamercolorempty' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\reserved@a' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\reserved@b' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\everymath' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\everymath' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\ifbeamercolorempty' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\reserved@a' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\reserved@b' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 157.
 
 [13
 
 
-] [14
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+[14
 
 
-] [15
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+[15
+
+
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+
+Overfull \vbox (161.58447pt too high) detected at line 190
+ []
+
+[16
+
+
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 215.
+
+[17
+
+
+]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
+[18
 
 
  </usr/local/texlive/2013/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf
 >]
+Overfull \hbox (20.4773pt too wide) has occurred while \output is active
+  [] [] [] [][][][] [] [] [] [] [] []  
+ []
+
 \tf@nav=\write7
 \openout7 = `presentation.nav'.
 
@@ -1656,19 +1763,19 @@ Overfull \vbox (161.58447pt too high) detected at line 141
 \tf@snm=\write9
 \openout9 = `presentation.snm'.
 
- [16
+[19
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
 
 (/Users/danielschmidt/Arbeit/Studium/7.Semester/softwareArchitecture/Vortrag/pr
 esentation/dist/pdf/presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 367BBB24FD2D797CF75192AF19B71DCB;645.
+(rerunfilecheck)             Checksum: 33C8EBFF1998CFE9FC0021CAC440D480;647.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1680,30 +1787,44 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'presentation.run.xml'.
 \openout1 = `presentation.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
  ) 
 Here is how much of TeX's memory you used:
- 24282 strings out of 493315
- 441515 string characters out of 6137904
- 641330 words of memory out of 5000000
- 27173 multiletter control sequences out of 15000+600000
- 15700 words of font info for 59 fonts, out of 8000000 for 9000
+ 24326 strings out of 493315
+ 442259 string characters out of 6137904
+ 644330 words of memory out of 5000000
+ 27203 multiletter control sequences out of 15000+600000
+ 16764 words of font info for 63 fonts, out of 8000000 for 9000
  961 hyphenation exceptions out of 8191
- 49i,19n,60p,939b,1354s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+ 49i,19n,60p,939b,1670s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Outline0.3.3.9} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.2.8} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.1.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
 Output written on /Users/danielschmidt/Arbeit/Studium/7.Semester/softwareArchit
-ecture/Vortrag/presentation/dist/pdf/presentation.pdf (15 pages, 122995 bytes).
+ecture/Vortrag/presentation/dist/pdf/presentation.pdf (18 pages, 173217 bytes).
 
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 580 PDF objects out of 1000 (max. 8388607)
+ 499 compressed objects within 5 object streams
+ 55 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
