@@ -64,7 +64,16 @@ An adaptable software system can tolerate changes in its environment without ext
 }
 }
 \frame{\frametitle{Beispiel}
-}
+
+\begin{figure}[h]
+\caption{Beispiel Component-and-Connector Ansicht}
+\centering
+\includegraphics[width=\textwidth]{img/fig1.png}
+\end{figure}
+
+\note {
+Der Ansatz basiert auf einer Component-and-Connector Ansicht, da sie allgemein verwendet wird um über die Qualitätswerte zur Laufzeit zu reden.
+}}
 
 \section{Metriken}
 \frame{\frametitle{Metriken}
@@ -76,18 +85,22 @@ Komponenten die den Service i bereitstellen
 Komponenten die den Service i bereitstellen können
 \end{Definition}
 }
+
+\frame{\frametitle{Metriken}
+\begin{figure}[h]
+\caption{Beispielarchitektur}
+\centering
+\includegraphics[width=\textwidth]{img/fig2.png}
+\end{figure}
+}
+
 \frame{\frametitle{Metriken}
 \begin{itemize}
 \item AAS und RAS
 \item MAAS und MRAS
 \item LSA
 \end{itemize}
-
-\note {
-\begin{itemize}
-\item Der Ansatz basiert auf einer Component-and-Connector Ansicht, da sie allgemein verwendet wird um über die Qualitätswerte zur Laufzeit zu reden.
-\end{itemize}
-}}
+}
 
 \subsection{AAS und RAS}
 \frame{\frametitle{AAS}
@@ -95,6 +108,12 @@ Komponenten die den Service i bereitstellen können
 \begin{Definition}[Absolute adaptability of a service]
 $AAS_i = | UC_i | $
 \end{Definition}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig2.png}
+\end{figure}
+
 \note {
 \textbf{AAS} misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.}
 }
@@ -103,6 +122,11 @@ $AAS_i = | UC_i | $
 \begin{Definition}[Relative adaptability of a service]
 $RAS_i = \frac{| UC_i |}{| C_i |}$
 \end{Definition}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig2.png}
+\end{figure}
 
 \note {
 \textbf{RAS} misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die tatsächlich solchen Service anbieten.
@@ -116,6 +140,11 @@ $RAS_i = \frac{| UC_i |}{| C_i |}$
 $MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
 \end{Definition}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig2.png}
+\end{figure}
+
 \note {
 \textbf{MAAS} misst die durchnittliche Nummer der genutzten Komponenten pro Dienstleistung. 
 }
@@ -126,6 +155,11 @@ $MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
 \begin{Definition}[Mean of relative adaptability of service]
 $MAAS = \frac{\sum_{i=1}^n RAS_i }{n}$
 \end{Definition}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig2.png}
+\end{figure}
 
 \note{
 \textbf{MRAS} misst den Durchschnitt des RAS (Relative Adaptability of a service).
@@ -138,6 +172,11 @@ $MAAS = \frac{\sum_{i=1}^n RAS_i }{n}$
 \begin{Definition}[Level of system adaptability]
 $LSA = \frac{\sum_{i=1}^n AAS_i }{\sum_{i=1}^n |C|}$
 \end{Definition}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig2.png}
+\end{figure}
 
 \note{
 \textbf{LSA} misst die Anzahl der Komponenten die benutzt werden um das System abzubilen im Verhältnis zu der Anzahl der Komponenten die die anpassungsfähigste Architektur nutzen würde
