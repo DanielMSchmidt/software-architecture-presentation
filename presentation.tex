@@ -69,11 +69,11 @@ An adaptable software system can tolerate changes in its environment without ext
 \section{Metriken}
 \frame{\frametitle{Metriken}
 \begin{Definition}[$UC_i $]
-$UC_i $ = Komponenten die den Service i bereitstellen
+Komponenten die den Service i bereitstellen
 \end{Definition}
 
 \begin{Definition}[$C_i $]
-$C_i $ =  Komponenten die den Service bereitstellen können
+Komponenten die den Service i bereitstellen können
 \end{Definition}
 }
 \frame{\frametitle{Metriken}
@@ -90,52 +90,45 @@ $C_i $ =  Komponenten die den Service bereitstellen können
 }}
 
 \subsection{AAS und RAS}
-\frame{\frametitle{AAS und RAS}
+\frame{\frametitle{AAS}
 
 \begin{Definition}[Absolute adaptability of a service]
 $AAS_i = | UC_i | $
 \end{Definition}
+\note {
+\textbf{AAS} misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.}
 }
 
-\frame{\frametitle{AAS und RAS}
-\begin{Definition}[Absolute adaptability of a service]
-$AAS_i = | UC_i | $
-\end{Definition}
-
+\frame{\frametitle{RAS}
 \begin{Definition}[Relative adaptability of a service]
 $RAS_i = \frac{| UC_i |}{| C_i |}$
 \end{Definition}
 
 \note {
-\begin{itemize}
-\item \textbf{AAS}: misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.
-\item \textbf{RAS}: misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die tatsächlich solchen Service anbieten.
-\end{itemize}
+\textbf{RAS} misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die tatsächlich solchen Service anbieten.
 }
 }
 
 \subsection{MAAS und MRAS}
-\frame{\frametitle{MAAS und MRAS}
+\frame{\frametitle{MAAS}
 
 \begin{Definition}[Mean of absolute adaptability of service]
 $MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
 \end{Definition}
+
+\note {
+\textbf{MAAS} misst die durchnittliche Nummer der genutzten Komponenten pro Dienstleistung. 
+}
 }
 
-\frame{\frametitle{MAAS und MRAS}
-\begin{Definition}[Mean of absolute adaptability of service]
-$MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
-\end{Definition}
+\frame{\frametitle{MRAS}
 
 \begin{Definition}[Mean of relative adaptability of service]
 $MAAS = \frac{\sum_{i=1}^n RAS_i }{n}$
 \end{Definition}
 
 \note{
-\begin{itemize}
-\item **MAAS** (Mean of absolute adaptability of service): misst die durchnittliche Nummer der genutzten Komponenten pro Dienstleistung. 
-\item **MRAS** (Mean of relative adaptability of service): misst den Durchschnitt des RAS (Relative Adaptability of a service).
-\end{itemize}
+\textbf{MRAS} misst den Durchschnitt des RAS (Relative Adaptability of a service).
 }
 }
 
@@ -147,9 +140,7 @@ $LSA = \frac{\sum_{i=1}^n AAS_i }{\sum_{i=1}^n |C|}$
 \end{Definition}
 
 \note{
-\begin{itemize}
-\item **LSA** (Level of system adaptability): misst die Anzahl der Komponenten die benutzt werden um das System abzubilen im Verhältnis zu der Anzahl der Komponenten die die anpassungsfähigste Architektur nutzen würde
-\end{itemize}
+\textbf{LSA} misst die Anzahl der Komponenten die benutzt werden um das System abzubilen im Verhältnis zu der Anzahl der Komponenten die die anpassungsfähigste Architektur nutzen würde
 }
 }
 
