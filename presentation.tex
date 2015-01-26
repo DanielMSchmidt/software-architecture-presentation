@@ -121,8 +121,8 @@ $AAS_i = | UC_i | $
 \end{figure}
 
 \note {
-\textbf{AAS} misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.}
-}
+\textbf{AAS} misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.
+}}
 
 \frame{\frametitle{RAS}
 \begin{Definition}[Relative adaptability of a service]
@@ -136,8 +136,7 @@ $RAS_i = \frac{| UC_i |}{| C_i |}$
 
 \note {
 \textbf{RAS} misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die tatsächlich solchen Service anbieten.
-}
-}
+}}
 
 \subsection{MAAS und MRAS}
 \frame{\frametitle{MAAS}
@@ -153,8 +152,7 @@ $MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
 
 \note {
 \textbf{MAAS} misst die durchnittliche Nummer der genutzten Komponenten pro Dienstleistung. 
-}
-}
+}}
 
 \frame{\frametitle{MRAS}
 
@@ -169,8 +167,7 @@ $MAAS = \frac{\sum_{i=1}^n RAS_i }{n}$
 
 \note{
 \textbf{MRAS} misst den Durchschnitt des RAS (Relative Adaptability of a service).
-}
-}
+}}
 
 \subsection{LSA}
 \frame{\frametitle{LSA}
@@ -186,8 +183,7 @@ $LSA = \frac{\sum_{i=1}^n AAS_i }{\sum_{i=1}^n |C|}$
 
 \note{
 \textbf{LSA} misst die Anzahl der Komponenten die benutzt werden um das System abzubilen im Verhältnis zu der Anzahl der Komponenten die die anpassungsfähigste Architektur nutzen würde
-}
-}
+}}
 
 \section{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
 \frame{\frametitle{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
@@ -196,8 +192,8 @@ Das niedrigste $A_i$ für welches man eine Architektur finden kann, welche die A
 \end{Definition}
 \note {
 $A_i$ sind zunehmende Werte für die gewählte Metrik der Anpassungsfähigkeit.
-}
-}
+}}
+
 \frame{\frametitle{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
 \begin{Definition}[$Adapt^+$]
 Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anforderungen erfüllen.
@@ -216,8 +212,7 @@ Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anfor
 \item  In (a) und (d) ist Adapt- das niedrigestes $A_i$ für welches man eine Architektur finden kann, welche die Anforderungen erfüllt. Adapt+ ist das niedrigste $A_i$, dessen Grenzen $Q_{A_i U}$ und $Q_{A_i L}$ die Anforderungen erfüllt.
 \item  Die Werte zeigen, dass die Erfüllung der Anforderungen eine Anpassungsfähigkeit von Adapt- voraussetzen und, dass jede Architektur die mindestens Adapt+ hat die Anforderungen auch erfüllt. Für Anpassungsfähigkeit dazwischen gibt es Architekturen, die die Anforderungen erfüllen und solche die es nicht tun.
 \end{itemize}
-}
-}
+}}
 
 \section{Beispiel}
 \frame{\frametitle{Beispiel}
@@ -232,23 +227,32 @@ Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anfor
 \begin{itemize}
 \item Es lassen sich bei Nutzung der gleichen Metrik zwei QoS in einen Graphen einzeichnen. Hierbei wird eine Fläche eingezeichnet, die die Werte bei allen möglichen Architekturen anzeigt. Es lassen sich Adapt+ und Adapt- für beide Qualitätsattribute einzeichnen, so entstehen (vielleicht) Bereiche in denen beide Anforderungen erfüllt sind, nur einer erfüllt ist oder keiner erfüllt ist.
 \end{itemize}
-}
-}
+}}
 
 \section{Analyse des Ansatzes}
+\frame{\frametitle{Definition des Ansatzes}
+TODO: Definieren 
+}
+
 \frame{\frametitle{Analyse des Ansatzes}
+
+\begin{itemize}
+\item \textbf{Ziel:} Zu zeigen, dass es eine Reihe von Möglichkeiten gibt mithilfe des Ansatzes ein System zu entwerfen, welches die Anforderungen erfüllt und manchmal auch die gesamte QoS und / oder Anpassbarkeit zu verbessern.
+\item Ansatz dauert länger als bisherige, aber das Resultat ist auch bei Änderungen weiterhin nutzbar.
+\end{itemize}
+
+
 \note {
 \begin{itemize}
 \item Ziel der Analyse ist es zu zeigen, dass es eine Reihe von Möglichkeiten gibt ein System durch die Anwendung des Ansatzes zu entwerfen, welches die Anforderungen erfüllt und manchmal auch die gesamte Qualität und / oder Anpassbarkeit verbessert.
-\item Der Ansatz dauert länger als andere Ansätze, die sich auf das Finden einer Architektur mit den höchsten Nutzen für die konkreten Systemvoraussetzungen. Allerdings sind die Erkenntnisse aus den anderen Ansätzen nutzlos sobald sich die Anforderungen ändern und die Analysen müssen wiederholt werden. Bei dem hier gewählten Ansatz muss lediglich die Asymptote der Anforderungen neu gezeichnet werden und dann die neuen Komponenten entsprechent ausgewählt werden. \begin{itemize}
+\item Der Ansatz dauert länger als andere Ansätze, die sich auf das Finden einer Architektur mit den höchsten Nutzen für die konkreten Systemvoraussetzungen. Allerdings sind die Erkenntnisse aus den anderen Ansätzen nutzlos sobald sich die Anforderungen ändern und die Analysen müssen wiederholt werden. Bei dem hier gewählten Ansatz muss lediglich die Asymptote der Anforderungen neu gezeichnet werden und dann die neuen Komponenten entsprechend ausgewählt werden. \begin{itemize}
 \item Die Umgebung stellt eine neue Komponente bereit: Der Ansatz kann angewendet werden, da es neue Möglichkeiten gibt
 \item Die Umgebung zerstört eine Komponente: Wenn die Komponente in der aktuellen Architektur nicht verwendet wird muss der Ansatz nicht genutzt werden, wenn sie jedoch benutzt wird und die Architektur nun nicht mehr die Anforderungen erfüllt so muss der Ansatz erneut genutz werden
 \item Eine bestehende Komponente ändert ihre QoS: Bei einer Verbesserung von $c_i$ gilt:  Wenn $c_i \in Arch$ dann muss der Anstaz nicht ausgeführt werden, ansonsten sollte er ausgeführt werden. Bei einer Verschlechterung gilt das Gegenteil mit dem Zusatz, dass falls die Anforderungen noch erfüllt sind es dem Architekten selbst überlassen ist zu entscheiden ob der Ansatz erneut ausgeführt werden sollte.
 \item Die Anforderungen ändern sich: Wenn die Anforderungen strikter werden und die Anforderungen nicht mehr eingehalten muss der Ansatz genutzt werden, ansonsten nicht
 \end{itemize}
 \end{itemize}
-}
-}
+}}
 
 \section{Beschränkungen}
 \frame{\frametitle{Beschränkungen}
