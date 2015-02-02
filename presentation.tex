@@ -24,7 +24,7 @@
 \begin{document}
 \title{On the relationships between QoS and software adaptability at the architectural level}
 \author{Daniel Schmidt}
-\date{\today}
+\date{17.02.2015}
 
 \frame{\titlepage}
 
@@ -50,17 +50,15 @@
 \section{Anpassungsfähigkeit}
 \frame{\frametitle{Anpassungsfähigkeit} 
 
-\begin{Definition}
-An adaptable software system can tolerate changes in its environment without external intervention.
+\begin{Definition}[Anpassungsfähiges Software System]
+Ein anpassungsfähiges Software System kann Änderungen in der Umwelt ohne einen externen Eingriff vertragen.
 \end{Definition}
 \tiny{\cite{def-adaptability}}
 
 \note {
 \begin{itemize}
 \item  Quantifizierung des Grads der Anpassungsfähigkeit wichtig
-\item Korrelation mit Ansatz von "Yang et al. (2009)", welche eine Abwägungsanalyse zwischen Qualitätsattributen und Anpassungsfähigkeit darstellt. Dabei nimmt dieser Ansatz Änderungen des Kontextes mit auf und die Entscheidung eine Anpassungsstrategie zur Laufzeit auszuführen wenn das System den aktuellen Kontext kennt
 \item Über heuristische Verfahren kann eine automatische Anpassung der Architektur erfolgen, hin zu einer Architektur, welche die Qualitätsmerkmale erfüllt oder nah dran ist
-\item Die Grundsätze des hier gewählten Ansatzes sind ähnlich derer in "Egyed and Wile (2006)", obwohl das Ziel divergiert. Im Gegensatz zu diesen Verfahren wird die Menge der möglichen Architekturen reduziert, indem Ansätze, welche eine Einschränkung nicht erfüllen gelöscht werden
 \item Die Ziele des Papers sind: \begin{itemize}
 	\item Eine erweiterte Menge von architekturellen Metriken die zur Evaluierung der Anpassungsfähigkeit des Systems verwendet werden können
 	\item Der Ansatz benutzt diese Metriken um die Beziehung zwischen Anpassungsfähigkeit und Qualitätswerten zu definieren, damit hilft dieser Ansatz bei der Begründung des Designs
@@ -72,9 +70,9 @@ An adaptable software system can tolerate changes in its environment without ext
 \frame{\frametitle{Beispiel}
 
 \begin{figure}[h]
-\caption{Beispiel Component-and-Connector Ansicht}
 \centering
 \includegraphics[width=\textwidth]{img/fig1.png}
+\caption{Beispiel Component-and-Connector Ansicht}
 \end{figure}
 
 \note {
@@ -84,19 +82,19 @@ Der Ansatz basiert auf einer Component-and-Connector Ansicht, da sie allgemein v
 \section{Metriken}
 \frame{\frametitle{Metriken}
 \begin{Definition}[$UC_i $]
-Komponenten die den Service i bereitstellen
+Komponenten, die den Dienst i bereitstellen
 \end{Definition}
 
 \begin{Definition}[$C_i $]
-Komponenten die den Service i bereitstellen können
+Komponenten, die den Dienst i bereitstellen können
 \end{Definition}
 }
 
 \frame{\frametitle{Metriken}
 \begin{figure}[h]
-\caption{Beispielarchitektur}
 \centering
 \includegraphics[width=\textwidth]{img/fig2.png}
+\caption{Beispielarchitektur}
 \end{figure}
 }
 
@@ -151,7 +149,7 @@ $MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
 \end{figure}
 
 \note {
-\textbf{MAAS} misst die durchnittliche Nummer der genutzten Komponenten pro Dienstleistung. 
+\textbf{MAAS} misst die durchnittliche Anzahl der genutzten Komponenten pro Dienstleistung. 
 }}
 
 \frame{\frametitle{MRAS}
@@ -231,7 +229,20 @@ Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anfor
 
 \section{Analyse des Ansatzes}
 \frame{\frametitle{Definition des Ansatzes}
-TODO: Definieren 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig3.png}
+\caption{Beziehungen der QoS zur Anpassungsfähigkeit}
+\end{figure}
+
+\note {
+\begin{itemize}
+\item Für jedes System gelten unterschiedliche Beziehungen zwischen QoS und Anpassungsfähigkeit
+\item Wissen über die Beziehungen ermöglicht es den besten Kompromiss zu finden zwischen Anpassungsfähigkeit und Zielanforderung
+\item Ziel der Analyse ist es zu zeigen, dass es eine Reihe von Möglichkeiten gibt ein System durch die Anwendung des Ansatzes zu entwerfen, welches die Anforderungen erfüllt und manchmal auch die gesamte Qualität und / oder Anpassbarkeit verbessert
+\item SOLAR (SOftware quaLities and Adaptability Relationships) ist ein Programm, welches den Ansatz umsetzt. Es hat jedoch performance probleme (bei 30 komponenten bis zu 20 minuten)
+\end{itemize}
+}
 }
 
 \frame{\frametitle{Analyse des Ansatzes}
@@ -241,16 +252,18 @@ TODO: Definieren
 \item Ansatz dauert länger als bisherige, aber das Resultat ist auch bei Änderungen weiterhin nutzbar.
 \end{itemize}
 
-
 \note {
 \begin{itemize}
-\item Ziel der Analyse ist es zu zeigen, dass es eine Reihe von Möglichkeiten gibt ein System durch die Anwendung des Ansatzes zu entwerfen, welches die Anforderungen erfüllt und manchmal auch die gesamte Qualität und / oder Anpassbarkeit verbessert.
-\item Der Ansatz dauert länger als andere Ansätze, die sich auf das Finden einer Architektur mit den höchsten Nutzen für die konkreten Systemvoraussetzungen. Allerdings sind die Erkenntnisse aus den anderen Ansätzen nutzlos sobald sich die Anforderungen ändern und die Analysen müssen wiederholt werden. Bei dem hier gewählten Ansatz muss lediglich die Asymptote der Anforderungen neu gezeichnet werden und dann die neuen Komponenten entsprechend ausgewählt werden. \begin{itemize}
-\item Die Umgebung stellt eine neue Komponente bereit: Der Ansatz kann angewendet werden, da es neue Möglichkeiten gibt
-\item Die Umgebung zerstört eine Komponente: Wenn die Komponente in der aktuellen Architektur nicht verwendet wird muss der Ansatz nicht genutzt werden, wenn sie jedoch benutzt wird und die Architektur nun nicht mehr die Anforderungen erfüllt so muss der Ansatz erneut genutz werden
-\item Eine bestehende Komponente ändert ihre QoS: Bei einer Verbesserung von $c_i$ gilt:  Wenn $c_i \in Arch$ dann muss der Anstaz nicht ausgeführt werden, ansonsten sollte er ausgeführt werden. Bei einer Verschlechterung gilt das Gegenteil mit dem Zusatz, dass falls die Anforderungen noch erfüllt sind es dem Architekten selbst überlassen ist zu entscheiden ob der Ansatz erneut ausgeführt werden sollte.
-\item Die Anforderungen ändern sich: Wenn die Anforderungen strikter werden und die Anforderungen nicht mehr eingehalten muss der Ansatz genutzt werden, ansonsten nicht
+\item dauert länger als andere Ansätze, aber Erkenntnisse aus den anderen Ansätzen nutzlos sobald sich die Anforderungen ändern, hier nicht.
+\item Es muss lediglich die Asymptote der Anforderungen neu gezeichnet werden und die neuen Komponenten entsprechend ausgewählt werden. 
+\small{
+\begin{itemize}
+	\item neue Komponente: Ja, da es neue Möglichkeiten gibt
+	\item Komponente zerstört: Ja, wenn in Architektur 
+	\item Komponente ändert QoS: Wenn es in der Architektur ist bei Verschlechterung Ja, ansonsten nein. Falls es nicht in der Architektur ist sollte er angewendet werden.
+	\item Die Anforderungen ändern sich: Wenn die Anforderungen strikter werden und die Anforderungen nicht mehr eingehalten muss der Ansatz genutzt werden, ansonsten nicht.
 \end{itemize}
+}
 \end{itemize}
 }}
 
@@ -265,7 +278,6 @@ TODO: Definieren
 
 \note {
 \begin{itemize}
-\item SOLAR (SOftware quaLities and Adaptability Relationships) ist ein Programm, welches den Ansatz umsetzt. Es hat jedoch performance probleme (bei 30 komponenten bis zu 20 minuten)
 \item Es wird für den Ansatz generell nur eine binäre Erfüllung der Anforderungen genutzt (erfüllt, nicht erfüllt). Eine weichere Form kann mit dem aktuellen Ansatz nicht vereint werden, da Adapt+ und Adapt- in einem durchgehenderen Erfüllbarkeitsschema nicht existieren würden
 \item Bisher gibt es keine Gewichtung in der einige Komponenten, bzw Services wichtiger sein können als andere (WIP).
 \item Normale Probleme (lack of knowledge about the real world execution enviroment and consequently the difficulty in defining architecture parameters)
