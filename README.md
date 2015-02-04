@@ -1,6 +1,7 @@
 # Presentation zu "Relationships btwn QoS & software adaptability at the architectural level"
 
 [Slides](https://github.com/DanielMSchmidt/software-architecture-presentation/raw/gh-pages/pdf/presentation.pdf)
+[Todos](TODO.md)
 
 ## Notizen
 (nach den Paper Kapiteln gegliedert)
