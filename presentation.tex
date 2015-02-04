@@ -41,6 +41,7 @@
 
 \note{
 \begin{itemize}
+\item Es geht immer um garantierte Anpassungsfähigkeit
 \item Garantierte Anpassungsfähigkeit von Software kann andere Qualitätsattribute wie Geschwindigkeit, Verlässlichkeit und Wartbarkeit beeinflussen.
 \item Ansatz ist bei einem wechselnden Kontext nützlich, er wird benutzt um zu testen ob die ausgewählten Komponenten die Voraussetzungen des Systems erfüllen.
 \end{itemize}
@@ -76,7 +77,11 @@ Ein anpassungsfähiges Software System kann Änderungen in der Umwelt ohne einen
 \end{figure}
 
 \note {
-Der Ansatz basiert auf einer Component-and-Connector Ansicht, da sie allgemein verwendet wird um über die Qualitätswerte zur Laufzeit zu reden.
+\begin{itemize}
+\item Der Ansatz basiert auf einer Component-and-Connector Ansicht, da sie allgemein verwendet wird um über die Qualitätswerte zur Laufzeit zu reden.
+\item Sockets für benötigte und angebotene Dienste
+\item Gemeinsame Linien zeigen an dass mehrere Komponenten den gleichen Dienst anbieten oder benötigen.
+\end{itemize}
 }}
 
 \section{Metriken}
@@ -119,7 +124,10 @@ $AAS_i = | UC_i | $
 \end{figure}
 
 \note {
-\textbf{AAS} misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.
+\begin{itemize}
+\item \textbf{AAS} misst die Anzahl der benutzten Komponenten, welche gewisse Dienste bereitstellen.
+\item Lösung: [1,1,2]
+\end{itemize}
 }}
 
 \frame{\frametitle{RAS}
@@ -133,7 +141,10 @@ $RAS_i = \frac{| UC_i |}{| C_i |}$
 \end{figure}
 
 \note {
-\textbf{RAS} misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die tatsächlich solchen Service anbieten.
+\begin{itemize}
+\item \textbf{RAS} misst die Anzahl der verwendeten Komponenten, welche einen gegebenen Service bereitstellen in hinsicht auf die Anzahl der Komponenten, die tatsächlich solchen Service anbieten.
+\item Lösung: [1,0.5, 0.6]
+\end{itemize}
 }}
 
 \subsection{MAAS und MRAS}
@@ -149,7 +160,11 @@ $MAAS = \frac{\sum_{i=1}^n AAS_i }{n}$
 \end{figure}
 
 \note {
-\textbf{MAAS} misst die durchnittliche Anzahl der genutzten Komponenten pro Dienstleistung. 
+
+\begin{itemize}
+\item \textbf{MAAS} misst die durchnittliche Anzahl der genutzten Komponenten pro Dienstleistung. Komponenten, die tatsächlich solchen Service anbieten.
+\item Lösung: 4/3 = 1.3
+\end{itemize}
 }}
 
 \frame{\frametitle{MRAS}
@@ -164,7 +179,10 @@ $MAAS = \frac{\sum_{i=1}^n RAS_i }{n}$
 \end{figure}
 
 \note{
-\textbf{MRAS} misst den Durchschnitt des RAS (Relative Adaptability of a service).
+\begin{itemize}
+\item \textbf{MRAS} misst den Durchschnitt des RAS (Relative Adaptability of a service).
+\item Lösung: (1 + 0.5 + 0.6) / 3 = 0.7
+\end{itemize}
 }}
 
 \subsection{LSA}
@@ -180,7 +198,10 @@ $LSA = \frac{\sum_{i=1}^n AAS_i }{\sum_{i=1}^n |C|}$
 \end{figure}
 
 \note{
-\textbf{LSA} misst die Anzahl der Komponenten die benutzt werden um das System abzubilen im Verhältnis zu der Anzahl der Komponenten die die anpassungsfähigste Architektur nutzen würde
+\begin{itemize}
+\item \textbf{LSA} bezeichnet das Verhältnis zwischen der Anzahl an Komponenten aus denen ein System besteht und der Anzahl die das Anpassungsfähigste nutzen würde.
+\item Lösung: 4 / (1 + 2 + 3)  = 0.66666
+\end{itemize}
 }}
 
 \section{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
@@ -189,20 +210,72 @@ $LSA = \frac{\sum_{i=1}^n AAS_i }{\sum_{i=1}^n |C|}$
 Das niedrigste $A_i$ für welches man eine Architektur finden kann, welche die Anforderungen erfüllt.
 \end{Definition}
 \note {
-$A_i$ sind zunehmende Werte für die gewählte Metrik der Anpassungsfähigkeit.
+\begin{itemize}
+\item Anforderungen werden durch Architekten gewählt und beziehen sich auf QoS des Systems.
+\item $A_i$ sind zunehmende Werte für die gewählte Metrik der Anpassungsfähigkeit.
+\end{itemize}
+
 }}
 
 \frame{\frametitle{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
 \begin{Definition}[$Adapt^+$]
 Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anforderungen erfüllen.
 \end{Definition}
-}
+
+\note {
+\begin{itemize}
+\item $Q_{A_{i}U}$ ist der höchste Qualitätswert den eine Architektur für ein Anpassungsfähigkeitsniveau erreichen kann.
+\item $Q_{A_{i}U}$ ist entsprechend der niedrigste.
+\end{itemize}
+}}
 
 \frame{\frametitle{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{img/fig4.png}
+\includegraphics[width=\textwidth]{img/fig4_1.png}
+\end{figure}
+
+\note{
+\begin{itemize}
+\item  In (a) und (d) ist Adapt- das niedrigestes $A_i$ für welches man eine Architektur finden kann, welche die Anforderungen erfüllt. Adapt+ ist das niedrigste $A_i$, dessen Grenzen $Q_{A_i U}$ und $Q_{A_i L}$ die Anforderungen erfüllt.
+\item  Die Werte zeigen, dass die Erfüllung der Anforderungen eine Anpassungsfähigkeit von Adapt- voraussetzen und, dass jede Architektur die mindestens Adapt+ hat die Anforderungen auch erfüllt. Für Anpassungsfähigkeit dazwischen gibt es Architekturen, die die Anforderungen erfüllen und solche die es nicht tun.
+\end{itemize}
+}}
+
+\frame{\frametitle{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig4_2.png}
+\end{figure}
+
+\note{
+\begin{itemize}
+\item  In (a) und (d) ist Adapt- das niedrigestes $A_i$ für welches man eine Architektur finden kann, welche die Anforderungen erfüllt. Adapt+ ist das niedrigste $A_i$, dessen Grenzen $Q_{A_i U}$ und $Q_{A_i L}$ die Anforderungen erfüllt.
+\item  Die Werte zeigen, dass die Erfüllung der Anforderungen eine Anpassungsfähigkeit von Adapt- voraussetzen und, dass jede Architektur die mindestens Adapt+ hat die Anforderungen auch erfüllt. Für Anpassungsfähigkeit dazwischen gibt es Architekturen, die die Anforderungen erfüllen und solche die es nicht tun.
+\end{itemize}
+}}
+
+\frame{\frametitle{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig4_3.png}
+\end{figure}
+
+\note{
+\begin{itemize}
+\item  In (a) und (d) ist Adapt- das niedrigestes $A_i$ für welches man eine Architektur finden kann, welche die Anforderungen erfüllt. Adapt+ ist das niedrigste $A_i$, dessen Grenzen $Q_{A_i U}$ und $Q_{A_i L}$ die Anforderungen erfüllt.
+\item  Die Werte zeigen, dass die Erfüllung der Anforderungen eine Anpassungsfähigkeit von Adapt- voraussetzen und, dass jede Architektur die mindestens Adapt+ hat die Anforderungen auch erfüllt. Für Anpassungsfähigkeit dazwischen gibt es Architekturen, die die Anforderungen erfüllen und solche die es nicht tun.
+\end{itemize}
+}}
+
+\frame{\frametitle{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{img/fig4_4.png}
 \end{figure}
 
 \note{
