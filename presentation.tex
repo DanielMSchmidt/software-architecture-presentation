@@ -20,7 +20,8 @@
 \usetheme{Berlin}
 \usecolortheme{dolphin}
 \beamertemplatenavigationsymbolsempty
-\setbeameroption{show notes on second screen}
+% \setbeameroption{show notes on second screen}
+\setbeameroption{hide notes}
 \begin{document}
 \title{On the relationships between QoS and software adaptability at the architectural level}
 \author{Daniel Schmidt}
@@ -204,7 +205,8 @@ $LSA = \frac{\sum_{i=1}^n AAS_i }{\sum_{i=1}^n |C|}$
 \end{itemize}
 }}
 
-\section{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
+\section{Ansatz}
+\subsection{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
 \frame{\frametitle{Adapt \textsuperscript{-} und Adapt \textsuperscript{+}}
 \begin{Definition}[$Adapt^-$]
 Das niedrigste $A_i$ für welches man eine Architektur finden kann, welche die Anforderungen erfüllt.
@@ -280,17 +282,17 @@ Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anfor
 
 \note{
 \begin{itemize}
-\item  In (a) und (d) ist Adapt- das niedrigestes $A_i$ für welches man eine Architektur finden kann, welche die Anforderungen erfüllt. Adapt+ ist das niedrigste $A_i$, dessen Grenzen $Q_{A_i U}$ und $Q_{A_i L}$ die Anforderungen erfüllt.
+\item  In (a) und (d) ist Adapt- das niedrigstes $A_i$ für welches man eine Architektur finden kann, welche die Anforderungen erfüllt. Adapt+ ist das niedrigste $A_i$, dessen Grenzen $Q_{A_i U}$ und $Q_{A_i L}$ die Anforderungen erfüllt.
 \item  Die Werte zeigen, dass die Erfüllung der Anforderungen eine Anpassungsfähigkeit von Adapt- voraussetzen und, dass jede Architektur die mindestens Adapt+ hat die Anforderungen auch erfüllt. Für Anpassungsfähigkeit dazwischen gibt es Architekturen, die die Anforderungen erfüllen und solche die es nicht tun.
 \end{itemize}
 }}
 
-\frame{\frametitle{Beispiel}
+\subsection{Mehrere Anforderungen}
+\frame{\frametitle{Mehrere Anforderungen}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{img/fig7.png}
-\caption{Zwei Qualitätsattribute in einem Graph}
+\includegraphics[width=0.75\textwidth]{img/fig7_1.png}
 \end{figure}
 
 \note {
@@ -299,12 +301,24 @@ Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anfor
 \end{itemize}
 }}
 
-\section{Analyse des Ansatzes}
-\frame{\frametitle{Definition des Ansatzes}
+\frame{\frametitle{Mehrere Anforderungen}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{img/fig7_2.png}
+\end{figure}
+
+\note {
+\begin{itemize}
+\item Es lassen sich bei Nutzung der gleichen Metrik zwei QoS in einen Graphen einzeichnen. Hierbei wird eine Fläche eingezeichnet, die die Werte bei allen möglichen Architekturen anzeigt. Es lassen sich Adapt+ und Adapt- für beide Qualitätsattribute einzeichnen, so entstehen (vielleicht) Bereiche in denen beide Anforderungen erfüllt sind, nur einer erfüllt ist oder keiner erfüllt ist.
+\end{itemize}
+}}
+
+\subsection{Beziehungen der QoS zur Anpassungsfähigkeit}
+\frame{\frametitle{Beziehungen der QoS zur Anpassungsfähigkeit}
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{img/fig3.png}
-\caption{Beziehungen der QoS zur Anpassungsfähigkeit}
 \end{figure}
 
 \note {
@@ -314,18 +328,20 @@ Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anfor
 \item Ziel der Analyse ist es zu zeigen, dass es eine Reihe von Möglichkeiten gibt ein System durch die Anwendung des Ansatzes zu entwerfen, welches die Anforderungen erfüllt und manchmal auch die gesamte Qualität und / oder Anpassbarkeit verbessert
 \item SOLAR (SOftware quaLities and Adaptability Relationships) ist ein Programm, welches den Ansatz umsetzt. Es hat jedoch performance probleme (bei 30 komponenten bis zu 20 minuten)
 \end{itemize}
-}
-}
+}}
 
-\frame{\frametitle{Analyse des Ansatzes}
+\section{Analyse des Ansatzes}
+
+\frame{\frametitle{Vorteile}
 
 \begin{itemize}
-\item \textbf{Ziel:} Zu zeigen, dass es eine Reihe von Möglichkeiten gibt mithilfe des Ansatzes ein System zu entwerfen, welches die Anforderungen erfüllt und manchmal auch die gesamte QoS und / oder Anpassbarkeit zu verbessern.
-\item Ansatz dauert länger als bisherige, aber das Resultat ist auch bei Änderungen weiterhin nutzbar.
+\item hilft die Architekturentscheidung zu rechtfertigen.
+\item dauert länger als bisherige Verfahren, aber das Resultat ist auch bei Änderungen weiterhin nutzbar.
 \end{itemize}
 
 \note {
 \begin{itemize}
+\item \textbf{Ziel:} Zu zeigen, dass es eine Reihe von Möglichkeiten gibt mithilfe des Ansatzes ein System zu entwerfen, welches die Anforderungen erfüllt und manchmal auch die gesamte QoS und / oder Anpassbarkeit zu verbessern.
 \item dauert länger als andere Ansätze, aber Erkenntnisse aus den anderen Ansätzen nutzlos sobald sich die Anforderungen ändern, hier nicht.
 \item Es muss lediglich die Asymptote der Anforderungen neu gezeichnet werden und die neuen Komponenten entsprechend ausgewählt werden. 
 \small{
@@ -339,7 +355,6 @@ Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anfor
 \end{itemize}
 }}
 
-\section{Beschränkungen}
 \frame{\frametitle{Beschränkungen}
 
 \begin{itemize}
