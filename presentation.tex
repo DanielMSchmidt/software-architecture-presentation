@@ -20,7 +20,8 @@
 \usetheme{Berlin}
 \usecolortheme{dolphin}
 \beamertemplatenavigationsymbolsempty
-\setbeameroption{show notes on second screen}
+\setbeameroption{show only notes}
+% \setbeameroption{show notes on second screen}
 % \setbeameroption{hide notes}
 \begin{document}
 \title{On the relationships between QoS and software adaptability at the architectural level}
@@ -346,10 +347,10 @@ Das niedrigste $A_i$ für dessen Grenzen $Q_{A_{i}U}$ und $Q_{A_{i}L}$ die Anfor
 \item Es muss lediglich die Asymptote der Anforderungen neu gezeichnet werden und die neuen Komponenten entsprechend ausgewählt werden. 
 \small{
 \begin{itemize}
-	\item neue Komponente: Ja, da es neue Möglichkeiten gibt
-	\item Komponente zerstört: Ja, wenn in Architektur 
-	\item Komponente ändert QoS: Wenn es in der Architektur ist bei Verschlechterung Ja, ansonsten nein. Falls es nicht in der Architektur ist sollte er angewendet werden.
-	\item Die Anforderungen ändern sich: Wenn die Anforderungen strikter werden und die Anforderungen nicht mehr eingehalten muss der Ansatz genutzt werden, ansonsten nicht.
+	\item neue K.: Ja, da es neue Möglichkeiten gibt
+	\item K. zerstört: Ja, wenn in Architektur 
+	\item K. ändert QoS: Wenn in Architektur bei (Verschlechterung Ja, ansonsten nein), sonst sollte es.
+	\item Anforderungen ändern sich: falls strikter werden und nicht mehr eingehalten muss der Ansatz genutzt werden, sonst nicht
 \end{itemize}
 }
 \end{itemize}
